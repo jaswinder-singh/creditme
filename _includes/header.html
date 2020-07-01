@@ -49,7 +49,7 @@
         </div>
         <div class="bg-light">
 			{% if page.header == 'special'%}<nav class="navbar navbar-expand-lg navbar-light py-lg-3 border-top bg-light mobile-header-adj">{% endif %}
-			{% if page.header == 'special'%}<nav class="navbar navbar-expand-lg navbar-light py-lg-3 border-top bg-white border-bottom">{% endif %}
+			{% if page.header != 'special'%}<nav class="navbar navbar-expand-lg navbar-light py-lg-3 border-top bg-white border-bottom">{% endif %}
                 <!-- bg-white border-bottom -->
                 <div class="container">
                     <a href="index.html"><img src="{{ site.url }}/assets/images/logo.svg" style="width:250px" alt="{{ site.name }} - {{ site.description }}"></a>
