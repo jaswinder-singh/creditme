@@ -1,0 +1,74 @@
+{% capture lvl %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}
+{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
+    <div class="footer section-space20">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 ">
+                    <div class="footer-logo">
+                        <img src="{{ site.url }}/assets/images/logo-bw.svg" style="width:200px" alt="{{ site.name }} - {{ site.description }}" />
+                    </div>
+                    <div class="widget-text mt40 text-justify">
+                        <p>{{ site.name }} is an online platform that provides our customers with financial products and services such as personal loans, home loans, car loans, credit cards and insurance. We connect borrowers with lenders to help them get
+                            the best deal possible.</p>
+                        <div class="row ">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+                                <p class="address-text "><span><i class="icon-placeholder-3 icon-1x "></i> </span>Lucknow</p>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+                                <p class="call-text "><span><i class="icon-phone-call icon-1x "></i></span>{{ site.phone }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 ">
+                    <div class="widget-footer mt40 ">
+                        <ul class="listnone ">
+                            <li><a href="# ">Home</a></li>
+                            <li><a href="# ">Services</a></li>
+                            <li><a href="# ">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 ">
+                    <div class="widget-footer mt40 ">
+                        <ul class="listnone ">
+                            <li><a href="# ">Car Loan</a></li>
+                            <li><a href="# ">Personal Loan</a></li>
+                            <li><a href="# ">Education Loan</a></li>
+                            <li><a href="# ">Business Loan</a></li>
+                            <li><a href="# ">Home Loan</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 ">
+                    <div class="widget-social mt40 ">
+                        <ul class="listnone ">
+                            <li><a href="#!"><i class="fab fa-facebook-f "></i>Facebook</a></li>
+                            <li><a href="#!"><i class="fab fa-twitter "></i>Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tiny-footer">
+        <!-- tiny footer -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                    <p>&copy; {{ site.time | date: '%Y' }} {{ site.name }}</p>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 text-right">
+                    <p>Terms of use | Privacy Policy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#0" class="cd-top" title="Go to top">Top</a>
+    <script src="{{ site.url }}/assets/js/jquery.min.js"></script>
+    <script src="{{ site.url }}/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ site.url }}/assets/js/main.js"></script>
+    <script src="{{ site.url }}/assets/js/back-to-top.js"></script>
+</body>
+
+</html>
