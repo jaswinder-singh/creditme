@@ -22,8 +22,7 @@
 </head>
 
 <body>
-    <div{% if page.header != 'special'%} class="sticky-top"{% endif %}>
-        {% if page.header == 'comment'%}<!--div class="collapse searchbar" id="searchbar">
+    <div{% if page.header != 'special'%} class="sticky-top"{% endif %}>{% if page.header == 'comment'%}<!--div class="collapse searchbar" id="searchbar">
             <div class="search-area bg-white">
                 <div class="container">
                     <div class="row">
@@ -36,8 +35,7 @@
                     </div>
                 </div>
             </div>
-        </div -->{% endif %}
-        <div class="header-topbar">
+        </div -->{% endif %}<div class="header-topbar">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-4 col-lg-5 col-md-4 col-sm-6 col-6 d-none d-xl-block d-lg-block">
@@ -50,10 +48,8 @@
             </div>
         </div>
         <div class="bg-light">
-            <!-- bg-white -->
 			{% if page.header == 'special'%}<nav class="navbar navbar-expand-lg navbar-light py-lg-3 border-top bg-light mobile-header-adj">{% endif %}
-			{% if page.header != 'special'%}<nav class="navbar navbar-expand-lg navbar-light py-lg-3 border-top bg-white border-bottom">{% endif %}
-            <nav class="navbar navbar-expand-lg navbar-light py-lg-3 border-top bg-light mobile-header-adj">
+			{% if page.header == 'special'%}<nav class="navbar navbar-expand-lg navbar-light py-lg-3 border-top bg-white border-bottom">{% endif %}
                 <!-- bg-white border-bottom -->
                 <div class="container">
                     <a href="index.html"><img src="{{ site.url }}/assets/images/logo.svg" style="width:250px" alt="{{ site.name }} - {{ site.description }}"></a>
