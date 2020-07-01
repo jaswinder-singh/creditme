@@ -9,8 +9,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="{{ site.name }} - {{ site.description }}">
     <meta name="keywords" content="{{ page.keywords }}">
-	{% if page.url == '/index.html'%}<title>{{ site.name }} - {{ site.description }}</title>{% endif %}
-    {% if page.url != '/index.html'%}<title>{{ page.title }} | {{ site.brand_name }} - {{ site.description }}</title>{% endif %}
+	{% if page.url == '/'%}<title>{{ site.name }} - {{ site.description }}</title>{% endif %}
+    {% if page.url != '/'%}<title>{{ page.title }} | {{ site.brand_name }} - {{ site.description }}</title>{% endif %}
     <link rel="shortcut icon" href="{{ site.url }}/favicon.ico" type="image/x-icon">
     <link rel="icon" href="{{ site.url }}/favicon.png" sizes="32x32" type="image/png">
     <link href="{{ site.url }}/assets/css/bootstrap.min.css" rel="stylesheet">
