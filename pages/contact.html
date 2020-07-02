@@ -51,7 +51,7 @@ permalink: /contact-us
                                             </div>
                                             <!-- Button -->
                                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                                <button id="submit-button" type="submit" class="btn btn-secondary">Submit</button>
+                                                <button id="submit-button" type="submit" class="btn btn-secondary ladda-button" data-style="expand-right">Submit</button>
                                             </div>
                                         </div>
                                     </div>
@@ -136,4 +136,19 @@ permalink: /contact-us
     };
     xhr.send(data);
   }
+  
+  Ladda.bind( '#submit-button', {
+				callback: function( instance ) {
+					var progress = 0;
+					var interval = setInterval( function() {
+						progress = Math.min( progress + Math.random() * 0.1, 1 );
+						instance.setProgress( progress );
+
+						if( progress === 1 ) {
+							instance.stop();
+							clearInterval( interval );
+						}
+					}, 200 );
+				}
+			} );
 </script>
