@@ -1,0 +1,26 @@
+/*! CSS Used from: /static_assets/style.css */
+*,h1{margin:0;}
+h1{position:relative;}
+@media (min-width:1200px){
+.container{padding:0;}
+}
+*{padding:0;border:none;outline:0;}
+a{text-decoration:none;cursor:pointer;color:#9c000b;}
+a:focus,a:hover,a:visited{text-decoration:none;outline:0;}
+li,ul{list-style:none;padding:0;margin:0;}
+.page-title{position:relative;padding-top:60px;padding-bottom:35px;background-color:#373737;background-size:cover;background-image:url(../images/section-title-bg.jpg);filter:grayscale(100%);background-position:center center;background-repeat:no-repeat;}
+.page-title:before{content:'';left:0;top:0;width:100%;height:100%;position:absolute;background:rgba(0,0,0,.5);}
+.page-title .container{position:relative;z-index:1;}
+.page-title .title-text h1{position:relative;font-size:30px;color:#feffff;line-height:50px;font-weight:600;letter-spacing:1px;display:inline-block;text-transform:uppercase;}
+.page-title .title-text .title-menu li{text-transform:capitalize;font-family:'Open Sans',sans-serif;position:relative;}
+.page-title .title-text .title-menu{position:relative;float:right;display:block;}
+.page-title .title-text .title-menu li{color:#FFC107;display:inline-block;line-height:28px;margin-top:15px;font-weight:400;font-size:16px;}
+.page-title .title-text .title-menu li a{font-weight:600;font-size:16px;color:#fff;margin-right:10px;transition:all .5s ease;}
+.page-title .title-text .title-menu li i{color:#fff;margin-right:10px;}
+.page-title .title-text .title-menu li a:hover{color:#ffffff;transition:all .5s ease;}
+/*! CSS Used from: /static_assets/responsive.css */
+@media only screen and (max-width: 625px){
+.page-title .title-text h1{display:block!important;text-align:center;}
+.page-title .title-text .title-menu{display:none!important;}
+.page-title{background-size:auto;}
+}
