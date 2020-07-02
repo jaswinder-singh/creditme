@@ -97,7 +97,6 @@ permalink: /contact-us
     
     function success() {
       form.reset();
-      button.style = "display: none";
       status.classList.add("alert-success");
       status.innerHTML = "Thanks for the message! We'll get back to you soon!";
       status.style = "display: block";
@@ -105,7 +104,6 @@ permalink: /contact-us
 
     function error() {
       form.reset();
-      button.style = "display: none";
       status.classList.add("alert-danger");
       status.innerHTML = "Oops! There was a problem in submitting the form.";
       status.style = "display: block";
