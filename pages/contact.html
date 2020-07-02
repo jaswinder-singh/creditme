@@ -19,40 +19,43 @@ permalink: /contact-us
                                         <h1>👋 Let's Talk</h1>
                                         <p>If there are things you're uncertain about or if you just want to say hi - shoot us a message and we will respond as soon as we can!</p>
                                     </div>
-                                <form class="contact-us" method="post" action="contact-us.php">
+									<div class="alert alert-danger" role="alert">
+                                    This is a danger alert—check it out!
+                                </div>
+                                <form class="contact-us" method="post" action="https://formspree.io/mayppwvd">
                                     <div class=" ">
                                         <!-- Text input-->
                                         <div class="row">
                                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                                                 <div class="form-group">
                                                     <label class="sr-only control-label" for="name">name<span class=" "> </span></label>
-                                                    <input id="name" name="name" type="text" placeholder="Name" class="form-control input-md" required>
+                                                    <input id="name" name="Name" type="text" placeholder="Name" class="form-control input-md" required>
                                                 </div>
                                             </div>
                                             <!-- Text input-->
                                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                                                 <div class="form-group">
                                                     <label class="sr-only control-label" for="email">Email<span class=" "> </span></label>
-                                                    <input id="email" name="email" type="email" placeholder="Email" class="form-control input-md" required>
+                                                    <input id="email" name="_replyto" type="email" placeholder="Email" class="form-control input-md" required>
                                                 </div>
                                             </div>
                                             <!-- Text input-->
                                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                                                 <div class="form-group">
                                                     <label class="sr-only control-label" for="phone">Phone<span class=" "> </span></label>
-                                                    <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control input-md" required>
+                                                    <input id="phone" name="Phone" type="text" placeholder="Phone" class="form-control input-md" required>
                                                 </div>
                                             </div>
                                             <!-- Select Basic -->
                                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                                 <div class="form-group">
                                                     <label class="control-label" for="message"> </label>
-                                                    <textarea class="form-control" id="message" rows="7" name="message" placeholder="Message"></textarea>
+                                                    <textarea class="form-control" id="message" rows="7" name="Message" placeholder="What's on your mind?"></textarea>
                                                 </div>
                                             </div>
                                             <!-- Button -->
                                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                                <button type="submit" class="btn btn-secondary">Submit</button>
+                                                <button id="submit-button" type="submit" class="btn btn-secondary">Submit</button>
                                             </div>
                                         </div>
                                     </div>
@@ -85,3 +88,56 @@ permalink: /contact-us
         </div>
       </div>
     </div>
+	<script>
+  window.addEventListener("DOMContentLoaded", function() {
+
+    // get the form elements defined in your form HTML above
+    
+    var form = document.getElementById("contact-us");
+    var button = document.getElementById("submit-button");
+    var status = document.getElementById("submission-status");
+
+    // Success and Error functions for after the form is submitted
+    
+    function success() {
+      form.reset();
+      button.style = "display: none";
+      status.classList.add("alert-success");
+      status.innerHTML = "Thanks for the message! We'll get back to you soon!";
+      status.style = "display: block";
+    }
+
+    function error() {
+      form.reset();
+      button.style = "display: none";
+      status.classList.add("alert-danger");
+      status.innerHTML = "Oops! There was a problem in submitting the form.";
+      status.style = "display: block";
+    }
+
+    // handle the form submission event
+
+    form.addEventListener("submit", function(ev) {
+      ev.preventDefault();
+      var data = new FormData(form);
+      ajax(form.method, form.action, data, success, error);
+    });
+  });
+  
+  // helper function for sending an AJAX request
+
+  function ajax(method, url, data, success, error) {
+    var xhr = new XMLHttpRequest();
+    xhr.open(method, url);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        success(xhr.response, xhr.responseType);
+      } else {
+        error(xhr.status, xhr.response, xhr.responseType);
+      }
+    };
+    xhr.send(data);
+  }
+</script>
