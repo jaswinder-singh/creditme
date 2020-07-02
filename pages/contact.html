@@ -19,7 +19,7 @@ permalink: /contact-us
                                         <h1>👋 Let's Talk</h1>
                                         <p>If there are things you're uncertain about or if you just want to say hi - shoot us a message and we will respond as soon as we can!</p>
                                     </div>
-								<div class="alert" role="alert" style="display:none"> </div>
+								<div id="submission-status-alert" class="alert" role="alert" style="display:none"> </div>
                                 <form class="contact-us" method="post" action="https://formspree.io/mayppwvd">
                                     <div class=" ">
                                         <!-- Text input-->
@@ -93,7 +93,7 @@ permalink: /contact-us
     
     var form = document.getElementById("contact-us");
     var button = document.getElementById("submit-button");
-    var status = document.getElementById("submission-status");
+    var status = document.getElementById("submission-status-alert");
 
     // Success and Error functions for after the form is submitted
     
