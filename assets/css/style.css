@@ -4899,24 +4899,24 @@ Landing Page Template
 
 .bullet-email-right:before {
   font-family: "Font Awesome 5 Free";
-  font-weight: 400;
+  font-weight: 900;
   display: block;
   position: absolute;
   left: 0;
   font-size: 14px;
   color: #788192;
-  content: "\f35a";
+  content: "\f1fa";
   line-height: 2.5;
 }
 
 .bullet-phone-right:before {
   font-family: "Font Awesome 5 Free";
-  font-weight: 400;
+  font-weight: 900;
   display: block;
   position: absolute;
   left: 0;
   font-size: 14px;
   color: #788192;
-  content: "\f35a";
+  content: "\f879";
   line-height: 2.5;
 }
