@@ -4888,3 +4888,11 @@ Landing Page Template
     display: none;
   }
 }
+
+.footer-link {
+	color: #778191;
+}
+
+.footer-link:hover {
+	color: #f51f8a;
+}
