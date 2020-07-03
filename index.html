@@ -242,7 +242,10 @@ keywords: Home Loan, Personal Loan, Business Loan, Loan Against Property, Used C
                             <form id="contact-us" method="post" action="https://formspree.io/mayppwvd" class="form-row">
                                 <div class="form-group col-lg-8 col-md-6 col-12 mb-0">
                                     <label for="phonenumber" class="sr-only"></label>
-                                    <input class="form-control" placeholder="+91" id="phonenumber" name="Phone No." required>
+									<div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">+91</span>
+                                    </div>
+                                    <input class="form-control input-group" id="phonenumber" name="Phone Number" required maxlength="10">
                                 </div>
                                 <input type="hidden" name="Request" value="Client Request! Call me back. ASAP!">
                                 <div class="col-lg-4 col-md-6 col-12">
