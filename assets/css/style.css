@@ -4951,12 +4951,12 @@ Landing Page Template
 }
 
 .custom-control-input:not(:disabled):active~.custom-control-label::before {
-    background-color: hsla(330, 91%, 54%, 0.5);
-    border-color: hsla(330, 91%, 54%, 0.5);
+    background-color: hsla(330, 91%, 54%, 0.5)!important;
+    border-color: hsla(330, 91%, 54%, 0.5)!important;
 }
 
 .custom-control-input:focus~.custom-control-label::before {
-    box-shadow: 0 0 0 0.2rem hsla(330, 91%, 54%, 0.5);
+    box-shadow: 0 0 0 0.2rem hsla(330, 91%, 54%, 0.5)!important;
 }
 
 .custom-control-input:focus:not(:checked)~.custom-control-label::before {
