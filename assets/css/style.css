@@ -531,6 +531,10 @@ Background & Block color
   background-color: #fafcfd;
 }
 
+.bg-light-gray {
+  background-color: #e6ecef !important;
+}
+
 .bg-primary {
   background-color: #15549a !important;
   color: #778191;
@@ -4939,4 +4943,18 @@ Landing Page Template
   color: #788192;
   content: "\e80e";
   line-height: 2.5;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    border-color: #f51f8a!important;
+    background-color: #f51f8a!important;
+}
+
+.custom-control-input:not(:disabled):active~.custom-control-label::before {
+    background-color: 0 0 0 0.2rem hsla(330, 91%, 54%, 0.5);
+    border-color: 0 0 0 0.2rem hsla(330, 91%, 54%, 0.5);
+}
+
+.custom-control-input:focus~.custom-control-label::before {
+    box-shadow: 0 0 0 0.2rem hsla(330, 91%, 54%, 0.5);
 }
