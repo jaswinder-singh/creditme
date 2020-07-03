@@ -240,7 +240,7 @@ keywords: Home Loan, Personal Loan, Business Loan, Loan Against Property, Used C
 					    <div id="submission-status-alert" class="alert" role="alert" style="display: none;"></div>
                         <div class="card-body">
                             <form id="contact-us" method="post" action="https://formspree.io/mayppwvd" class="form-row">
-                                <div class="form-group input-group col-lg-8 col-md-6 col-12 mb-0">
+                                <div class="form-group input-group col-lg-8 col-md-6 col-12 mb-0" style="padding-left: 0px">
                                     <label for="phonenumber" class="sr-only"></label>
 									<div class="input-group-prepend">
                                         <span class="input-group-text bg-light" id="basic-addon1">+91</span>
@@ -248,11 +248,11 @@ keywords: Home Loan, Personal Loan, Business Loan, Loan Against Property, Used C
                                     <input class="form-control" id="phonenumber" name="Phone Number" required maxlength="10">
                                 </div>
                                 <input type="hidden" name="Request" value="Client Request! Call me back. ASAP!">
-                                <div class="col-lg-4 col-md-6 col-12 mb10">
+                                <div class="col-lg-4 col-md-6 col-12">
                                     <button id="submit-button" type="submit" class="btn btn-secondary btn-block">Call me back</button>
                                 </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" name="Consent to provision of information" class="custom-control-input" id="information">
+                                <div class="custom-control custom-checkbox mt10">
+                                    <input type="checkbox" name="Consent to provision of information" required value="Yes" class="custom-control-input" id="information">
                                     <label class="custom-control-label" for="information">I agree with the rules for the provision of information.</label>
                                 </div>
                             </form>
