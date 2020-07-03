@@ -4168,6 +4168,22 @@ Landing Page Template
   background-position-x: center;
 }
 
+.bg-shape-light {
+  position: relative;
+}
+
+.bg-shape-light::after {
+  position: absolute;
+  background: url(../images/curve-shape-light.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: -15px;
+  height: 62px;
+  width: 100%;
+  content: "";
+  background-position-x: center;
+}
+
 .bg-warning {
   background-color: #ff9700;
 }
