@@ -106,6 +106,10 @@ permalink: /contact-us
         form.addEventListener("submit", function (ev) {
             ev.preventDefault();
             var data = new FormData(form);
+            status.style = "display: none";
+            status.innerHTML = " ";
+            status.classList.remove("alert-success");
+            status.classList.remove("alert-danger");
             ajax(form.method, form.action, data, success, error);
         });
     });
