@@ -348,6 +348,10 @@ Padding space
   padding-bottom: 0px!important;
 }
 
+.nopt {
+  padding-top: 0px!important;
+}
+
 .pinside10 {
   padding: 10px;
 }
