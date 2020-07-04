@@ -4925,7 +4925,7 @@ Landing Page Template
   color: #778191;
 }
 
-.footer-link:hover {
+.footer-link:focus, .footer-link:hover {
   color: #f51f8a;
 }
 
