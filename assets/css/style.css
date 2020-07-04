@@ -4922,11 +4922,11 @@ Landing Page Template
 }
 
 .footer-link {
-	color: #778191;
+  color: #778191;
 }
 
 .footer-link:hover {
-	color: #f51f8a;
+  color: #f51f8a;
 }
 
 .bullet-email-right:before {
@@ -4954,21 +4954,21 @@ Landing Page Template
 }
 
 .custom-control-input:checked~.custom-control-label::before {
-    border-color: #f51f8a!important;
-    background-color: #f51f8a!important;
+  border-color: #f51f8a!important;
+  background-color: #f51f8a!important;
 }
 
 .custom-control-input:not(:disabled):active~.custom-control-label::before {
-    background-color: hsla(330, 91%, 54%, 0.5)!important;
-    border-color: hsla(330, 91%, 54%, 0.5)!important;
+  background-color: hsla(330, 91%, 54%, 0.5)!important;
+  border-color: hsla(330, 91%, 54%, 0.5)!important;
 }
 
 .custom-control-input:focus~.custom-control-label::before {
-    box-shadow: 0 0 0 0.2rem hsla(330, 91%, 54%, 0.5)!important;
+  box-shadow: 0 0 0 0.2rem hsla(330, 91%, 54%, 0.5)!important;
 }
 
 .custom-control-input:focus:not(:checked)~.custom-control-label::before {
-    border-color: #f51f8a!important;
+  border-color: #f51f8a!important;
 }
 
 .no-select {
