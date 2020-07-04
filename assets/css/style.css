@@ -333,15 +333,15 @@ less margin space from top
 Padding space
 -----------------*/
 .nopadding {
-  padding: 0px;
+  padding: 0px!important;
 }
 
 .nopr {
-  padding-right: 0px;
+  padding-right: 0px!important;
 }
 
 .nopl {
-  padding-left: 0px;
+  padding-left: 0px!important;
 }
 
 .nopb {
