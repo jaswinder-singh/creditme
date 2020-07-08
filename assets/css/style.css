@@ -4988,15 +4988,7 @@ Landing Page Template
   position: relative;
   display: block;
   padding: 10px 15px;
-  background: #eff3f8!important;
 }
 
-.product-tabs .nav > li.active a {
-  background: #fff!important;
-}
-
-.product-tabs .tab-content {
-  background: #fff!important;
-}
 
 
