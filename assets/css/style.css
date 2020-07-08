@@ -9,7 +9,8 @@ body {
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
   color: #778191;
-  background-color: #f4f6f8;
+  /* background-color: #f4f6f8; */
+  background-color: #eff3f8;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -4986,7 +4987,15 @@ Landing Page Template
   border: 1px solid #dee7f2!important;
 }
 
+.st-tabs .nav-link {
+  background-color: #f4f6f8!important;
+}
+
 .st-tabs .nav-link>i {
+  transition: none!important;
+}
+
+.st-tabs .nav-link>i:before {
   transition: none!important;
 }
 
