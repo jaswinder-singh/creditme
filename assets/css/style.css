@@ -5017,3 +5017,7 @@ Landing Page Template
   color: #fff!important;
   font-weight: 600!important;
 }
+
+.st-tabs .tab content a.btn {
+  padding: 12px 30px;!important;
+}
