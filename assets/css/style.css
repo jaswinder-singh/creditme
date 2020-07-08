@@ -4988,6 +4988,8 @@ Landing Page Template
 .st-tabs .tab-content {
   /* background: #f4f6f8!important; */
   background: #fff!important;
+  padding-top: 60px;
+  padding-bottom: 60px;
   border: 1px solid #dee7f2!important;
 }
 
@@ -5019,5 +5021,5 @@ Landing Page Template
 }
 
 .st-tabs .tab-content a.btn {
-  padding: 12px 30px!important;
+  padding: 11px 30px!important;
 }
