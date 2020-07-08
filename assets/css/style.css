@@ -4981,6 +4981,18 @@ Landing Page Template
 }
 
 .st-tabs .tab-content {
-  background: #eff3f8!important;
+  background: #f4f6f8!important;
   border: 1px solid #dee7f2!important;
+}
+
+.st-tabs .btn-secondary {
+  color: #fff!important;
+}
+
+.st-tabs .btn-outline-primary {
+  color: #15549a!important;
+}
+
+.st-tabs .btn-outline-primary:hover {
+  color: #fff!important;
 }
