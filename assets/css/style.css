@@ -4980,12 +4980,7 @@ Landing Page Template
             user-select: none;
 }
 
-.product-tabs ul {
-  display: block;
-}
-
-.product-tabs .nav>li>a {
-  position: relative;
-  display: block;
-  padding: 10px 15px;
+.st-tabs .tab-content {
+  background: #eff3f8!important;
+  border: 1px solid #dee7f2!important;
 }
