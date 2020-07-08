@@ -4986,6 +4986,10 @@ Landing Page Template
   border: 1px solid #dee7f2!important;
 }
 
+.st-tabs .nav-link>i {
+  transition: none!important;
+}
+
 .st-tabs .btn-secondary {
   color: #fff!important;
   font-weight: 600!important;
