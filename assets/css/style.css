@@ -4981,6 +4981,10 @@ Landing Page Template
             user-select: none;
 }
 
+.widget {
+  background-color: #eff3f8!important;
+}
+
 .st-tabs .tab-content {
   /* background: #f4f6f8!important; */
   background: #fff!important;
