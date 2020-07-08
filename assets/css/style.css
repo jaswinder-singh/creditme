@@ -4987,12 +4987,15 @@ Landing Page Template
 
 .st-tabs .btn-secondary {
   color: #fff!important;
+  font-weight: 600!important;
 }
 
 .st-tabs .btn-outline-primary {
   color: #15549a!important;
+  font-weight: 600!important;
 }
 
 .st-tabs .btn-outline-primary:hover {
   color: #fff!important;
+  font-weight: 600!important;
 }
