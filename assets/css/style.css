@@ -4981,7 +4981,8 @@ Landing Page Template
 }
 
 .st-tabs .tab-content {
-  background: #f4f6f8!important;
+  /* background: #f4f6f8!important; */
+  background: #fff!important;
   border: 1px solid #dee7f2!important;
 }
 
