@@ -4979,3 +4979,9 @@ Landing Page Template
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none;
 }
+
+.product-tabs .nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
