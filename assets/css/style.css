@@ -5053,3 +5053,7 @@ Landing Page Template
   border-bottom: 1px solid #7e93ae!important;
   margin-left: -1px!important;
 }
+
+.st-tabs ul>li>a.nav-link {
+  color: #4985c7;!important;
+}
