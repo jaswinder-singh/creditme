@@ -113,12 +113,12 @@ permalink: /contact-us
         // handle the form submission event
         form.addEventListener("submit", function (ev) {
             ev.preventDefault();
-            var data = serialize(document.getElementById("contact-us"));
+            var data = new FormData(form);
             status.style = "display: none";
             status.innerHTML = " ";
             status.classList.remove("alert-success");
             status.classList.remove("alert-danger");
-            ajax("GET", "https://script.google.com/macros/s/AKfycbwW-aBW08oPHXWV6jAvHzPgqn4Ja_ynQjbZY9kfn6UzoXiyGnQ/exec", data, success, error);
+            ajax(form.method, "https://script.google.com/macros/s/AKfycbwW-aBW08oPHXWV6jAvHzPgqn4Ja_ynQjbZY9kfn6UzoXiyGnQ/exec", data, success, error);
         });
     });
 
