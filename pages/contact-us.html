@@ -86,6 +86,7 @@ permalink: /contact-us
         </div>
     </div>
 </div>
+<script src="{{site.url}}/assets/js/serialize-0.2.min.js"></script>
 <script>
     window.addEventListener("DOMContentLoaded", function () {
 	
@@ -112,7 +113,7 @@ permalink: /contact-us
         // handle the form submission event
         form.addEventListener("submit", function (ev) {
             ev.preventDefault();
-            var data = form.serializeObject();
+            var data = serialize(document.getElementById("contact-us"));
             status.style = "display: none";
             status.innerHTML = " ";
             status.classList.remove("alert-success");
