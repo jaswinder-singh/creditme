@@ -1157,7 +1157,7 @@ top bar
 
 .slider-captions {
   position: absolute;
-  bottom: 200px;
+  bottom: 150px;
 }
 
 .slider-title {
@@ -4490,7 +4490,7 @@ Landing Page Template
   /*--------------- slider for mobile view ( for mobile view  )---------- */
   .slider-captions {
     position: absolute;
-    bottom: 28px;
+    bottom: 48px;
     text-align: center;
   }
 
