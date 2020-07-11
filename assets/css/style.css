@@ -5043,3 +5043,13 @@ Landing Page Template
   border: 1px solid #abb2bf!important;
   border-top: 0px!important;
 }
+
+.st-tabs ul.tab-content {
+  border: 1px solid #abb2bf!important;
+  border-top: 0px!important;
+}
+
+.st-tabs ul.nav-tabs {
+  border-bottom: 1px solid #7e93ae!important;
+  margin-left: -1px!important;
+}
