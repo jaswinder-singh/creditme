@@ -1,6 +1,4 @@
-{% capture lvl %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}
-{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
-    <div class="footer section-space20">
+{% capture lvl %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}    <div class="footer section-space20">
         <div class="container ">
             <div class="row ">
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
