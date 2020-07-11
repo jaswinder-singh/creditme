@@ -5033,6 +5033,7 @@ Landing Page Template
   background-color: #fff!important;
   border-color: #abb2bf!important;
   border-bottom: none!important;
+  transition: none!important;
 }
 
 .st-tabs .nav-link:hover {
