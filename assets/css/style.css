@@ -5023,3 +5023,23 @@ Landing Page Template
 .st-tabs .tab-content a.btn {
   padding: 11px 30px!important;
 }
+
+.st-tabs .nav-link {
+  background-color: #e3f0fe!important;
+  border: 1px solid #abb2bf!important;
+}
+
+.st-tabs .nav-link.active {
+  background-color: #fff!important;
+  border-color: #abb2bf!important;
+  border-bottom: none!important;
+}
+
+.st-tabs .nav-link:hover {
+  border-color: #abb2bf!important;
+}
+
+.st-tabs .tab-content {
+  border: 1px solid #abb2bf!important;
+  border-top: 0px!important;
+}
