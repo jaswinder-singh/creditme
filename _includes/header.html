@@ -1,8 +1,5 @@
-{% capture lvl %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}
-{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
-<!DOCTYPE html>
+{% capture lvl %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,7 +27,6 @@
         gtag('config', 'UA-50931182-7');
     </script>
 </head>
-
 <body>
     <div{% if page.header != 'special'%} class="sticky-top"{% endif %}>{% if page.header == 'comment'%}<!--div class="collapse searchbar" id="searchbar">
             <div class="search-area bg-white">
