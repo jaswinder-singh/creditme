@@ -5058,3 +5058,7 @@ Landing Page Template
 .st-tabs ul>li>a.nav-link {
   color: #15549ab8;
 }
+
+.ui-slider-range, .ui-slider-handle {
+  transition: none!important;
+}
