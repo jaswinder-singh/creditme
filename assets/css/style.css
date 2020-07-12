@@ -4685,7 +4685,7 @@ Landing Page Template
   /*--------------- slider for mobile view ( for mobile view  )---------- */
   .slider-captions {
     position: absolute;
-    bottom: 10px;
+    bottom: 25px;
     text-align: center;
     width: 100%;
   }
